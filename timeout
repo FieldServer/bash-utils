@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-TIMEOUT=$1
-shift
-echo TIMEOUT $TIMEOUT $@
-($@)  & sleep $TIMEOUT; kill $! && exit 1 2> /dev/null || :
+export PERL_BADLANG=0
+export LANG="FOO"
+perl -e '{alarm shift; exec @ARGV}' "$@";

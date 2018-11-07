@@ -25,5 +25,5 @@ exited yet.
 
 To install into current directory (e.g. on Travis)
 ```
-curl https://raw.githubusercontent.com/FieldServer/bash-utils/master/timeout -O && chmod +x ./timeout
+curl -O https://raw.githubusercontent.com/FieldServer/bash-utils/master/timeout && chmod +x ./timeout
 ```
